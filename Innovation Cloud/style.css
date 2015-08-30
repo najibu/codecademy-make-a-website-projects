@@ -18,7 +18,8 @@ body {
 /* Header */
 .header {
   height: 800px;
-  text-align: center; 
+  text-align: center;
+  background: url(https://s3.amazonaws.com/codecademy-content/projects/innovation-cloud/bg.jpg) no-repeat center center / cover; 
 }
 
 .header .container {
@@ -31,6 +32,16 @@ body {
 	line-height: 100px; 
 	margin-top: 0;
 	margin-bottom: 80px;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.btn-default{
+	color: #fff;
+    background: #000;
+    padding: 10px 40px;
+    text-decoration: none;
+    transition: background .5s;
 }
 
 @media (min-width:850px) {
@@ -44,6 +55,8 @@ body {
 	letter-spacing: 8px;
 	margin-bottom: 40px;
 	margin-top: 0;
+	color: #fff;
+	text-transform: uppercase;
 }
 
 .btn:hover {
@@ -54,17 +67,56 @@ body {
 
 
 /* Nav */
+.nav {
+    background: #000;
+    height: 80px;
+    width: 100%;
+}
+
+div {
+    display: block;
+}
+
 .nav ul {
 	list-style: none;
 	margin: 0 auto; 
 	padding: 30px 0;
-	text-align: center; 
+	height: 80px;
 }
 
+.nav ul li {
+    color: #fff;
+    display: inline-block;
+    height: 80px;
+    line-height: 80px;
+    list-style: none;
+    padding: 0 10px;
+    transition: background .5s;
+}
+
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
 
 /* Main */
 .main .container {
 	margin: 80px auto;
+}
+
+.main img {
+	float: left;
+	margin: 50px 80px 50px 0;
 }
 
 
@@ -72,6 +124,8 @@ body {
 .jumbotron {
 	height: 600px; 
 	text-align: right;
+	background: url(https://s3.amazonaws.com/codecademy-content/projects/innovation-cloud/jumbotron_bg.jpg) center center;
+    background-size: cover;
 }
 
 .jumbotron .container {
@@ -79,10 +133,38 @@ body {
 	top: 220px;
 }
 
+.jumbotron h2 {
+    color: #fff;
+    text-align: right;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+
+.jumbotron p {
+    color: #fff;
+    text-align: right;
+}
 
 /* Footer */
 .footer { 
 	font-size: 14px;
+	background: #000;
+}
+
+.footer p {
+    color: #fff;
+    font-size: 14px;
+    height: 80px;
+    line-height: 80px;
+    margin: 0;
 }
 
 /* Media Queries */
