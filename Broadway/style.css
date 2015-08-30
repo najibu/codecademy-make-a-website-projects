@@ -11,11 +11,18 @@ html, body {
 
 .jumbotron {
 	height: 800px;
+	background: url("https://s3.amazonaws.com/codecademy-content/projects/broadway/bg.jpg") no-repeat scroll center center / cover;
+
+}
+
+.header {
+	background-color: #333333;
 }
 
 .nav {
 	margin: 0;
 	padding: 20px 0;
+	list-style-type: none;
 }
 
 .nav li {
@@ -23,6 +30,9 @@ html, body {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 600;
 	font-size: 12px;
+	display: inline;
+	text-transform: uppercase;
+	margin-right: 25px; 
 }
 
 .main h1 {
@@ -45,6 +55,20 @@ html, body {
   padding: 16px 40px;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.learn-more {
+	border: 1px solid #333;
+	color: #333;
+	font-family: "Raleway",sans-serif;
+	font-weight: 600;
+	font-size: 10px;
+	letter-spacing: 1.3px;
+	padding: 10px 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	display: inline-block;
+	margin-bottom: 20px;
 }
 
 .supporting {
